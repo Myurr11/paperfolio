@@ -16,7 +16,7 @@ export const Footer = () => {
 
           <div className="flex items-center gap-4">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Myurr11" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 bg-background border-2 border-foreground rounded-full flex items-center justify-center hover:bg-foreground hover:text-background transition-all hover:shadow-[4px_4px_0px_hsl(var(--foreground))]"
@@ -24,7 +24,7 @@ export const Footer = () => {
               <Github className="w-5 h-5" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/mayur-joshi-92076b258/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 bg-background border-2 border-foreground rounded-full flex items-center justify-center hover:bg-foreground hover:text-background transition-all hover:shadow-[4px_4px_0px_hsl(var(--foreground))]"
@@ -32,7 +32,7 @@ export const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
-              href="https://twitter.com" 
+              href="https://x.com/MayurJo02287540" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 bg-background border-2 border-foreground rounded-full flex items-center justify-center hover:bg-foreground hover:text-background transition-all hover:shadow-[4px_4px_0px_hsl(var(--foreground))]"
@@ -40,7 +40,7 @@ export const Footer = () => {
               <Twitter className="w-5 h-5" />
             </a>
             <a 
-              href="mailto:hello@example.com"
+              href="mailto:joshimayur1110@gmail.com"
               className="w-12 h-12 bg-background border-2 border-foreground rounded-full flex items-center justify-center hover:bg-foreground hover:text-background transition-all hover:shadow-[4px_4px_0px_hsl(var(--foreground))]"
             >
               <Mail className="w-5 h-5" />

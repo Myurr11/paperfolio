@@ -48,6 +48,7 @@ export const ContactSection = () => {
               {/* Contact Info Grid */}
               <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
                 {/* Email */}
+                <a href="mailto:joshimayur1110@gmail.com" className="block">
                 <div className="group/contact bg-white border-2 border-foreground rounded-2xl p-6 hover:bg-paper-yellow hover:scale-105 hover:shadow-[6px_6px_0px_hsl(var(--foreground))] transition-all duration-300 cursor-pointer">
                   <div className="bg-paper-yellow border-2 border-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 group-hover/contact:bg-white transition-colors duration-300">
                     <Mail className="w-6 h-6" />
@@ -55,6 +56,7 @@ export const ContactSection = () => {
                   <h3 className="font-bold mb-2">Email</h3>
                   <p className="text-sm text-muted-foreground group-hover/contact:text-foreground">joshimayur1110@gmail.com</p>
                 </div>
+                </a>
 
                 {/* Phone */}
                 <div className="group/contact bg-white border-2 border-foreground rounded-2xl p-6 hover:bg-paper-pink hover:scale-105 hover:shadow-[6px_6px_0px_hsl(var(--foreground))] transition-all duration-300 cursor-pointer">
