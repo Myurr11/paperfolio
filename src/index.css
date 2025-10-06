@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+
+@layer base {
+  :root {
+    --background: 40 40% 97%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 100% 85%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 40 30% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 330 100% 88%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 20%;
+
+    --radius: 1.5rem;
+    
+    /* Custom paper note colors */
+    --paper-yellow: 45 100% 85%;
+    --paper-pink: 330 100% 88%;
+    --paper-blue: 220 85% 65%;
+    --paper-coral: 15 100% 65%;
+    --paper-light-blue: 200 60% 85%;
+    --paper-light-green: 120 100% 85%; 
+    
+    /* Shadows for paper effect */
+    --shadow-paper: 0 8px 16px -4px hsl(0 0% 0% / 0.1), 0 4px 8px -2px hsl(0 0% 0% / 0.06);
+    --shadow-paper-hover: 0 12px 24px -6px hsl(0 0% 0% / 0.15), 0 6px 12px -3px hsl(0 0% 0% / 0.08);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 45 80% 60%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 330 80% 70%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 0 0% 80%;
+    --paper-yellow: 45 80% 60%;
+    --paper-pink: 330 80% 70%;
+    --paper-blue: 220 70% 55%;
+    --paper-coral: 15 80% 60%;
+    --paper-light-blue: 200 50% 70%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .paper-border {
+    border: 3px solid hsl(var(--foreground));
+    box-shadow: var(--shadow-paper);
+  }
+  
+  .paper-border-thick {
+    border: 4px solid hsl(var(--foreground));
+    box-shadow: var(--shadow-paper);
+  }
+  
+  .rotate-slight {
+    transform: rotate(-2deg);
+  }
+  
+  .rotate-slight-reverse {
+    transform: rotate(2deg);
+  }
+  
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-paper-hover);
+  }
+}
