@@ -205,6 +205,7 @@ const FeaturedProjects = () => {
 
         {/* View All Projects with Animation */}
         <div className="text-center mt-16">
+          <a href="https://github.com/Myurr11">
           <Button 
             size="lg"
             variant="outline"
@@ -214,6 +215,7 @@ const FeaturedProjects = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-paper-yellow to-paper-pink opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <Sparkles className="w-5 h-5 ml-2 relative z-10 transform group-hover:rotate-180 transition-transform duration-700" />
           </Button>
+          </a>
           </div>
         </div>
 
